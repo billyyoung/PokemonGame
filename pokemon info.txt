@@ -1,0 +1,27 @@
+Bulbasaur,60,leaf,none,fire,1,Leech Seed,0,0,recharge
+Charmander,80,fire,none,water,2,Scratch,10,15,none,Ember,30,40,none
+Cyndaquil,80,fire,none,water,2,Fireworks,20,30,none,Quick Attack,20,15,wild card
+Diglett,45,earth,leaf,electric,2,dig,10,10,none,mud slap,20,30,none
+Doduo,70,fighting,earth,electric,1,Fury Attack,20,40,wild card
+Growlithe,90,fire,none,water,1,Flare,20,30,none
+Jigglypuff,90,fighting,fighting,fire,2,Lullaby,30,10,stun,Pound,20,25,none 
+Machop,80,fighting,electric,none,1,Low Kick,10,20,none 
+Magikarp,50,water,none,electric,2,Tackle,20,30,none,Flail,20,15,wild card 
+Magmar,80,fire,none,water,2,Fire Punch,30,35,none,Flamethrower,30,50,wild card
+Mankey,60,earth,none,fighting,2,Fury Swipes,20,60,wild card,Pranks,0,0,recharge
+Mareep,60,electric,none,fire,2,Static Electricity,20,0,stun,Thundershock,20,25,stun
+Nidoran,60,leaf,none,fire,1,Horn Hazard,30,40,none
+Onix,110,earth,electric,water,2,Rock throw,10,20,stun,Harden,20,0,disable
+Pidgey,60,fighting,earth,electric,1,Whirlwind,15,20,stun
+Pikachu,70,electric,none,fire,2,Quick Attack,10,20,none,Agility,30,0,disable
+Pinisir,90,leaf,none,fire,2,Irongrip,20,20,stun,Guillotine,40,50,wild card
+Rhyhorn,110,earth,electric,fighting,2,Leer,30,0,stun,Horn Attack,30,40,none 
+Seel,90,water,none,electric,1,Headbutt,30,30,stun
+Spearow,80,fighting,earth,electric,2,Peck,10,10,none,Mirror Move,20,30,none
+Staryu,60,water,none,electric,1,Slap,20,20,none 
+Tangela,75,leaf,none,fire,2,Bind,25,20,stun,Poisonpowder,30,40,wild card
+Totodile,75,water,none,leaf,2,Leer,30,0,stun,Fury Swipes,20,40,none 
+Venonat,60,leaf,none,fire,2,Stun Spore,20,20,stun,Leech Life,0,15,recharge
+Voltorb,60,electric,none,earth,2,shock,10,20,none,explode,30,30,none
+Vulpix,75,fire,none,water,1,Confuse Ray,20,0,stun
+Wooper,75,water,electric,leaf,2,Amnesia,30,0,disable,Slam,20,30,none 
