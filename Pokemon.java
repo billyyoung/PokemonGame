@@ -20,7 +20,7 @@ public class Pokemon{
 	private Attack[] attacks;
 	private Image pokeImage;
 	// attakcs is an array of the attack
-	// its [name,damage,cost,special]
+	// it's [name,damage,cost,special]
 	
 	public Pokemon(String in){
 		// using StringTokenizer for more efficiency
@@ -30,7 +30,7 @@ public class Pokemon{
 		hp = Integer.parseInt(st.nextToken());
 		fullHP = hp;
 		energy = 50;
-		fullEnergy = 50;	
+		fullEnergy = 50;
 		type = st.nextToken();
 		resistance = st.nextToken();
 		weakness = st.nextToken();
@@ -53,10 +53,10 @@ public class Pokemon{
 		player = p;
 		if (player==1){
 			x=100;
-			pokeImage = (new ImageIcon("Battle Pics\\"+name+" L"+".png")).getImage().getScaledInstance(100,100,Image.SCALE_SMOOTH);
+			pokeImage = (new ImageIcon("pictures/BattlePictures/"+name+" L"+".png")).getImage().getScaledInstance(100,100,Image.SCALE_SMOOTH);
 		}else{
 			x = 700;
-			pokeImage = (new ImageIcon("Battle Pics\\"+name+" R"+".png")).getImage().getScaledInstance(100,100,Image.SCALE_SMOOTH);
+			pokeImage = (new ImageIcon("pictures/BattlePictures/"+name+" R"+".png")).getImage().getScaledInstance(100,100,Image.SCALE_SMOOTH);
 			//fullHP = 200;
 		}
 		speed = 10;

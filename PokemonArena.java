@@ -1,4 +1,5 @@
 // The "PokemonArena" class.
+/*
 public class PokemonArena
 {
     
@@ -58,3 +59,4 @@ public class PokemonArena
 		    return -1;
 	}
 } // PokemonArena class
+*/

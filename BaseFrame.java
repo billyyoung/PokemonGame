@@ -18,7 +18,6 @@
  *				   inherited class.
  -------------------------------------------------------------------------------------*/
 
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -26,7 +25,8 @@ import java.awt.image.*;
 
 class BaseFrame extends JFrame implements MouseMotionListener, MouseListener, KeyListener{
 	protected int mx,my,mb;
-	protected boolean []keys;
+	protected boolean[]keys;
+	protected boolean nextStatePrompt;
 	protected Image dbImage;
 	protected Graphics dbg;
 	final protected int LEFT = 37;
@@ -48,17 +48,20 @@ class BaseFrame extends JFrame implements MouseMotionListener, MouseListener, Ke
 		addMouseMotionListener(this);
 		keys = new boolean[2000];
 		
+		nextStatePrompt = false;
+		
 		setSize(800,600);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
     }
     
-	public int []getMouse(){
+	public int[] getMouse(){
 		int []pos=new int[2];
 		pos[0]=mx;
 		pos[1]=my;
 		return pos;
 	}
+	
 	public int getButton(){
 		return mb;
 	}
@@ -78,11 +81,13 @@ class BaseFrame extends JFrame implements MouseMotionListener, MouseListener, Ke
     public void mouseReleased(MouseEvent e) {
      	updateMouse(e);     	
      	mb = 0;
-    }    
+    }
+    
     public void mouseClicked(MouseEvent e){
     	updateMouse(e);
     	mb = e.getButton();
-    }    
+    }
+    
     public void mouseDragged(MouseEvent e){
     	updateMouse(e);
     	mb = e.getButton();
@@ -107,7 +112,7 @@ class BaseFrame extends JFrame implements MouseMotionListener, MouseListener, Ke
         keys[e.getKeyCode()] = false;
     }
     
-  	public void update(){
+  	public void update() {
 		Graphics g = getGraphics();
 		if(dbImage == null){
 			dbImage = createImage(getWidth(), getHeight());
@@ -117,4 +122,7 @@ class BaseFrame extends JFrame implements MouseMotionListener, MouseListener, Ke
 		g.drawImage(dbImage,0,0,null);
 	}
 
+  	public boolean getNextStatePrompt() {
+  		return nextStatePrompt;
+  	}
 }
